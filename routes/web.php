@@ -23,4 +23,4 @@ Route::post('/', [AuthController::class,'authenticated']);
 Route::get('/logout', [AuthController::class,'logout']);
 
 //Dashboard
-Route::get('/dashboard', [BendaharaController::class, 'index'])->middleware('auth');
+Route::get('/Dashboard', [BendaharaController::class, 'index'])->middleware('auth');

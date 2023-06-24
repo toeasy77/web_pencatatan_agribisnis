@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins";
+  /* border: 1px solid red; */
+}
+
+.slide-to-left {
+  animation: slide-to-left 1.2s ease-in;
+}
+
+.slide-to-right {
+  animation: slide-to-right 1.3s ease-in;
+}
+
+@keyframes slide-to-left {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+    left: 0;
+  }
+}
+
+@keyframes slide-to-right {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+    right: 0;
+  }
+}
